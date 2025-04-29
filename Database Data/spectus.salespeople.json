@@ -1,0 +1,11 @@
+[{
+  "_id": {
+    "$oid": "6810cc0b94b8b556b8146b8b"
+  },
+  "name": "salesPerson1",
+  "capacities": 12,
+  "managedBy": {
+    "$oid": "6810b9b9c76f9a1c55e3d3e7"
+  },
+  "__v": 0
+}]
