@@ -1,0 +1,352 @@
+{
+    "info": {
+        "_postman_id": "9a626d1b-ef0a-4677-9954-3ce0f532d348",
+        "name": "Spectus",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "Manager",
+            "item": [
+                {
+                    "name": "create manager",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:3000/manager",
+                            "path": [
+                                "manager"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"name\":\"Manager Ashok\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "get all manager",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:3000/manager",
+                            "path": [
+                                "manager"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"name\":\"Manager1\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "get manager details",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:3000/manager/6810b9b9c76f9a1c55e3d3e7",
+                            "path": [
+                                "manager",
+                                "6810b9b9c76f9a1c55e3d3e7"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                },
+                {
+                    "name": "update Manager",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "http://localhost:3000/manager/6810b5f138c42b49467e539e",
+                            "path": [
+                                "manager",
+                                "6810b5f138c42b49467e539e"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"name\":\"newManager\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "delete Manager",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "http://localhost:3000/manager/6810b5f138c42b49467e539e",
+                            "path": [
+                                "manager",
+                                "6810b5f138c42b49467e539e"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Orders",
+            "item": [
+                {
+                    "name": "Create order",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:3000/order",
+                            "path": [
+                                "order"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"name\":\"OrderName5\",\n  \"Address\":\"address2\",\n  \"order_no\":\"123\",\n  \"distance\":\"distance\",\n  \"direction\":\"North\",\n  \"managedBy\":\"6810b9b9c76f9a1c55e3d3e7\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "get orders",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:3000/order",
+                            "path": [
+                                "order"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                },
+                {
+                    "name": "get order by Id",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:3000/order/6810b9f5c76f9a1c55e3d3ed",
+                            "path": [
+                                "order",
+                                "6810b9f5c76f9a1c55e3d3ed"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                },
+                {
+                    "name": "update order",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "http://localhost:3000/order/6810b9f5c76f9a1c55e3d3ed",
+                            "path": [
+                                "order",
+                                "6810b9f5c76f9a1c55e3d3ed"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n\n    \"name\": \"OrderName\",\n    \"Address\": \"address2\",\n    \"distance\": \"23\",\n    \"direction\": \"East\"\n  }"
+                        }
+                    }
+                },
+                {
+                    "name": "delete order",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "http://localhost:3000/order/6810b9f5c76f9a1c55e3d3ed",
+                            "path": [
+                                "order",
+                                "6810b9f5c76f9a1c55e3d3ed"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "SalesPerson",
+            "item": [
+                {
+                    "name": "get all sales person",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:3000/sales-person",
+                            "path": [
+                                "sales-person"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                },
+                {
+                    "name": "create sales person",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:3000/sales-person",
+                            "path": [
+                                "sales-person"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"name\":\"salesPerson1\",\n  \"managedBy\":\"6810b9b9c76f9a1c55e3d3e7\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "get sales person by Id",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "http://localhost:3000/sales-person/6810bd63d76f1fc9f722dbf2",
+                            "path": [
+                                "sales-person",
+                                "6810bd63d76f1fc9f722dbf2"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                },
+                {
+                    "name": "Update SalesPerson",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "http://localhost:3000/sales-person/6810bd63d76f1fc9f722dbf2",
+                            "path": [
+                                "sales-person",
+                                "6810bd63d76f1fc9f722dbf2"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"name\":\"Rahul\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "Delete Sales Person",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "http://localhost:3000/sales-person/6810bd1f8272144f1c1402ca",
+                            "path": [
+                                "sales-person",
+                                "6810bd1f8272144f1c1402ca"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "3000"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
