@@ -6,10 +6,11 @@ import {
   getSalesPersonById,
   updateSalesPerson,
 } from "../controllers/salesPerson.controller.js";
+import { createSalesPersonValidations } from "../validations/salesPerson.validations.js";
 
 const salesPersonRoutes = express();
 
-salesPersonRoutes.post("/", createSalesPerson);
+salesPersonRoutes.post("/", createSalesPersonValidations(), createSalesPerson);
 
 salesPersonRoutes.get("/", getSalesPerson);
 

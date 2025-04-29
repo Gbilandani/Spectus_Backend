@@ -1,9 +1,10 @@
+import { matchedData } from "express-validator";
 import { order } from "../models/order.model.js";
 
 export const createOrder = async (req, res) => {
   try {
-    console.log("req.body", req.body);
-    const newOrder = await order.create(req.body);
+    const body = matchedData(req);
+    const newOrder = await order.create(body);
     return res
       .status(201)
       .send({ data: newOrder, message: "Order Created Successfully" });

@@ -6,10 +6,11 @@ import {
   getOrders,
   updateOrder,
 } from "../controllers/order.controller.js";
+import { createOrderValidations } from "../validations/order.validations.js";
 
 const orderRoutes = express();
 
-orderRoutes.post("/", createOrder);
+orderRoutes.post("/", createOrderValidations(), createOrder);
 
 orderRoutes.get("/", getOrders);
 

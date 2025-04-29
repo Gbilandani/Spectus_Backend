@@ -2,14 +2,12 @@ import { SalesPerson } from "../models/salesPerson.model.js";
 
 export const createSalesPerson = async (req, res) => {
   try {
-    console.log("req.body", req.body);
-    const newSalesPerson = await SalesPerson.create(req.body);
-    return res
-      .status(201)
-      .send({
-        data: newSalesPerson,
-        message: "SalesPerson Created Successfully",
-      });
+    const body = matchedData(req);
+    const newSalesPerson = await SalesPerson.create(body);
+    return res.status(201).send({
+      data: newSalesPerson,
+      message: "SalesPerson Created Successfully",
+    });
   } catch (error) {
     console.error(error);
     return res.status(400).send({

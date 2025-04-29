@@ -6,10 +6,11 @@ import {
   getManagers,
   updateManager,
 } from "../controllers/manager.controller.js";
+import { createmanagerValidations } from "../validations/manager.validations.js";
 
 const managerRoutes = express();
 
-managerRoutes.post("/", createManager);
+managerRoutes.post("/", createmanagerValidations(), createManager);
 
 managerRoutes.get("/", getManagers);
 

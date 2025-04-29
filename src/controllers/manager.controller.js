@@ -1,10 +1,12 @@
+import { matchedData } from "express-validator";
 import { Manager } from "../models/manager.model.js";
 import { order } from "../models/order.model.js";
 import { SalesPerson } from "../models/salesPerson.model.js";
 
 export const createManager = async (req, res) => {
   try {
-    const newManager = await Manager.create(req.body);
+    const body = matchedData(req);
+    const newManager = await Manager.create(body);
     return res
       .status(201)
       .send({ data: newManager, message: "Manager Created Successfully" });

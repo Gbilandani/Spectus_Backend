@@ -1,352 +1,248 @@
 {
-    "info": {
-        "_postman_id": "9a626d1b-ef0a-4677-9954-3ce0f532d348",
-        "name": "Spectus",
-        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-        "description": ""
-    },
-    "item": [
+    "clientName": "Thunder Client",
+    "collectionName": "Spectus",
+    "collectionId": "4dcfbf8a-fa22-4cf9-87ca-9bef4b6d3581",
+    "dateExported": "2025-04-29T12:54:54.161Z",
+    "version": "1.2",
+    "folders": [
         {
+            "_id": "66357020-546e-41e8-ae13-169696d0dc25",
             "name": "Manager",
-            "item": [
-                {
-                    "name": "create manager",
-                    "request": {
-                        "method": "POST",
-                        "url": {
-                            "raw": "http://localhost:3000/manager",
-                            "path": [
-                                "manager"
-                            ],
-                            "protocol": "http",
-                            "host": [
-                                "localhost"
-                            ],
-                            "port": "3000"
-                        },
-                        "body": {
-                            "mode": "raw",
-                            "options": {
-                                "raw": {
-                                    "language": "json"
-                                }
-                            },
-                            "raw": "{\n  \"name\":\"Manager Ashok\"\n}"
-                        }
-                    }
-                },
-                {
-                    "name": "get all manager",
-                    "request": {
-                        "method": "GET",
-                        "url": {
-                            "raw": "http://localhost:3000/manager",
-                            "path": [
-                                "manager"
-                            ],
-                            "protocol": "http",
-                            "host": [
-                                "localhost"
-                            ],
-                            "port": "3000"
-                        },
-                        "body": {
-                            "mode": "raw",
-                            "options": {
-                                "raw": {
-                                    "language": "json"
-                                }
-                            },
-                            "raw": "{\n  \"name\":\"Manager1\"\n}"
-                        }
-                    }
-                },
-                {
-                    "name": "get manager details",
-                    "request": {
-                        "method": "GET",
-                        "url": {
-                            "raw": "http://localhost:3000/manager/6810b9b9c76f9a1c55e3d3e7",
-                            "path": [
-                                "manager",
-                                "6810b9b9c76f9a1c55e3d3e7"
-                            ],
-                            "protocol": "http",
-                            "host": [
-                                "localhost"
-                            ],
-                            "port": "3000"
-                        }
-                    }
-                },
-                {
-                    "name": "update Manager",
-                    "request": {
-                        "method": "PUT",
-                        "url": {
-                            "raw": "http://localhost:3000/manager/6810b5f138c42b49467e539e",
-                            "path": [
-                                "manager",
-                                "6810b5f138c42b49467e539e"
-                            ],
-                            "protocol": "http",
-                            "host": [
-                                "localhost"
-                            ],
-                            "port": "3000"
-                        },
-                        "body": {
-                            "mode": "raw",
-                            "options": {
-                                "raw": {
-                                    "language": "json"
-                                }
-                            },
-                            "raw": "{\n  \"name\":\"newManager\"\n}"
-                        }
-                    }
-                },
-                {
-                    "name": "delete Manager",
-                    "request": {
-                        "method": "DELETE",
-                        "url": {
-                            "raw": "http://localhost:3000/manager/6810b5f138c42b49467e539e",
-                            "path": [
-                                "manager",
-                                "6810b5f138c42b49467e539e"
-                            ],
-                            "protocol": "http",
-                            "host": [
-                                "localhost"
-                            ],
-                            "port": "3000"
-                        }
-                    }
-                }
-            ]
+            "containerId": "",
+            "created": "2025-04-29T11:19:33.680Z",
+            "sortNum": 10000
         },
         {
+            "_id": "335324d0-8b49-40d8-b143-32d2cae37d9f",
             "name": "Orders",
-            "item": [
-                {
-                    "name": "Create order",
-                    "request": {
-                        "method": "POST",
-                        "url": {
-                            "raw": "http://localhost:3000/order",
-                            "path": [
-                                "order"
-                            ],
-                            "protocol": "http",
-                            "host": [
-                                "localhost"
-                            ],
-                            "port": "3000"
-                        },
-                        "body": {
-                            "mode": "raw",
-                            "options": {
-                                "raw": {
-                                    "language": "json"
-                                }
-                            },
-                            "raw": "{\n  \"name\":\"OrderName5\",\n  \"Address\":\"address2\",\n  \"order_no\":\"123\",\n  \"distance\":\"distance\",\n  \"direction\":\"North\",\n  \"managedBy\":\"6810b9b9c76f9a1c55e3d3e7\"\n}"
-                        }
-                    }
-                },
-                {
-                    "name": "get orders",
-                    "request": {
-                        "method": "GET",
-                        "url": {
-                            "raw": "http://localhost:3000/order",
-                            "path": [
-                                "order"
-                            ],
-                            "protocol": "http",
-                            "host": [
-                                "localhost"
-                            ],
-                            "port": "3000"
-                        }
-                    }
-                },
-                {
-                    "name": "get order by Id",
-                    "request": {
-                        "method": "GET",
-                        "url": {
-                            "raw": "http://localhost:3000/order/6810b9f5c76f9a1c55e3d3ed",
-                            "path": [
-                                "order",
-                                "6810b9f5c76f9a1c55e3d3ed"
-                            ],
-                            "protocol": "http",
-                            "host": [
-                                "localhost"
-                            ],
-                            "port": "3000"
-                        }
-                    }
-                },
-                {
-                    "name": "update order",
-                    "request": {
-                        "method": "PUT",
-                        "url": {
-                            "raw": "http://localhost:3000/order/6810b9f5c76f9a1c55e3d3ed",
-                            "path": [
-                                "order",
-                                "6810b9f5c76f9a1c55e3d3ed"
-                            ],
-                            "protocol": "http",
-                            "host": [
-                                "localhost"
-                            ],
-                            "port": "3000"
-                        },
-                        "body": {
-                            "mode": "raw",
-                            "options": {
-                                "raw": {
-                                    "language": "json"
-                                }
-                            },
-                            "raw": "{\n\n    \"name\": \"OrderName\",\n    \"Address\": \"address2\",\n    \"distance\": \"23\",\n    \"direction\": \"East\"\n  }"
-                        }
-                    }
-                },
-                {
-                    "name": "delete order",
-                    "request": {
-                        "method": "DELETE",
-                        "url": {
-                            "raw": "http://localhost:3000/order/6810b9f5c76f9a1c55e3d3ed",
-                            "path": [
-                                "order",
-                                "6810b9f5c76f9a1c55e3d3ed"
-                            ],
-                            "protocol": "http",
-                            "host": [
-                                "localhost"
-                            ],
-                            "port": "3000"
-                        }
-                    }
-                }
-            ]
+            "containerId": "",
+            "created": "2025-04-29T11:33:03.646Z",
+            "sortNum": 20000
         },
         {
+            "_id": "cfa65e76-c85e-4458-b493-19f7f2075bdd",
             "name": "SalesPerson",
-            "item": [
-                {
-                    "name": "get all sales person",
-                    "request": {
-                        "method": "GET",
-                        "url": {
-                            "raw": "http://localhost:3000/sales-person",
-                            "path": [
-                                "sales-person"
-                            ],
-                            "protocol": "http",
-                            "host": [
-                                "localhost"
-                            ],
-                            "port": "3000"
-                        }
-                    }
-                },
-                {
-                    "name": "create sales person",
-                    "request": {
-                        "method": "POST",
-                        "url": {
-                            "raw": "http://localhost:3000/sales-person",
-                            "path": [
-                                "sales-person"
-                            ],
-                            "protocol": "http",
-                            "host": [
-                                "localhost"
-                            ],
-                            "port": "3000"
-                        },
-                        "body": {
-                            "mode": "raw",
-                            "options": {
-                                "raw": {
-                                    "language": "json"
-                                }
-                            },
-                            "raw": "{\n  \"name\":\"salesPerson1\",\n  \"managedBy\":\"6810b9b9c76f9a1c55e3d3e7\"\n}"
-                        }
-                    }
-                },
-                {
-                    "name": "get sales person by Id",
-                    "request": {
-                        "method": "GET",
-                        "url": {
-                            "raw": "http://localhost:3000/sales-person/6810bd63d76f1fc9f722dbf2",
-                            "path": [
-                                "sales-person",
-                                "6810bd63d76f1fc9f722dbf2"
-                            ],
-                            "protocol": "http",
-                            "host": [
-                                "localhost"
-                            ],
-                            "port": "3000"
-                        }
-                    }
-                },
-                {
-                    "name": "Update SalesPerson",
-                    "request": {
-                        "method": "PUT",
-                        "url": {
-                            "raw": "http://localhost:3000/sales-person/6810bd63d76f1fc9f722dbf2",
-                            "path": [
-                                "sales-person",
-                                "6810bd63d76f1fc9f722dbf2"
-                            ],
-                            "protocol": "http",
-                            "host": [
-                                "localhost"
-                            ],
-                            "port": "3000"
-                        },
-                        "body": {
-                            "mode": "raw",
-                            "options": {
-                                "raw": {
-                                    "language": "json"
-                                }
-                            },
-                            "raw": "{\n  \"name\":\"Rahul\"\n}"
-                        }
-                    }
-                },
-                {
-                    "name": "Delete Sales Person",
-                    "request": {
-                        "method": "DELETE",
-                        "url": {
-                            "raw": "http://localhost:3000/sales-person/6810bd1f8272144f1c1402ca",
-                            "path": [
-                                "sales-person",
-                                "6810bd1f8272144f1c1402ca"
-                            ],
-                            "protocol": "http",
-                            "host": [
-                                "localhost"
-                            ],
-                            "port": "3000"
-                        }
-                    }
-                }
-            ]
+            "containerId": "",
+            "created": "2025-04-29T11:48:46.304Z",
+            "sortNum": 30000
         }
-    ]
+    ],
+    "requests": [
+        {
+            "_id": "0f59c026-8320-488e-956d-fdade13d1b57",
+            "colId": "4dcfbf8a-fa22-4cf9-87ca-9bef4b6d3581",
+            "containerId": "66357020-546e-41e8-ae13-169696d0dc25",
+            "name": "create manager",
+            "url": "http://localhost:3000/manager",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-04-29T11:19:45.201Z",
+            "modified": "2025-04-29T12:53:35.566Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Manager Ashok\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "38a7bd34-e190-4558-bf95-aa24956af2ef",
+            "colId": "4dcfbf8a-fa22-4cf9-87ca-9bef4b6d3581",
+            "containerId": "66357020-546e-41e8-ae13-169696d0dc25",
+            "name": "get all manager",
+            "url": "http://localhost:3000/manager",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2025-04-29T11:20:23.206Z",
+            "modified": "2025-04-29T11:20:33.808Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Manager1\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "c05512ff-93d9-4fcd-b732-f81f1163bc20",
+            "colId": "4dcfbf8a-fa22-4cf9-87ca-9bef4b6d3581",
+            "containerId": "66357020-546e-41e8-ae13-169696d0dc25",
+            "name": "get manager details",
+            "url": "http://localhost:3000/manager/6810b9b9c76f9a1c55e3d3e7",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2025-04-29T11:25:06.140Z",
+            "modified": "2025-04-29T12:01:39.097Z",
+            "headers": []
+        },
+        {
+            "_id": "7d99e874-fc25-40db-8431-3a82287b3105",
+            "colId": "4dcfbf8a-fa22-4cf9-87ca-9bef4b6d3581",
+            "containerId": "66357020-546e-41e8-ae13-169696d0dc25",
+            "name": "update Manager",
+            "url": "http://localhost:3000/manager/6810b5f138c42b49467e539e",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2025-04-29T11:26:17.667Z",
+            "modified": "2025-04-29T11:28:37.574Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"newManager\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a164a0ac-e3df-48a7-856e-85a44862c805",
+            "colId": "4dcfbf8a-fa22-4cf9-87ca-9bef4b6d3581",
+            "containerId": "66357020-546e-41e8-ae13-169696d0dc25",
+            "name": "delete Manager",
+            "url": "http://localhost:3000/manager/6810b5f138c42b49467e539e",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2025-04-29T11:26:20.132Z",
+            "modified": "2025-04-29T11:28:51.649Z",
+            "headers": []
+        },
+        {
+            "_id": "1043f28a-00a2-4d48-ae10-3d719e1f2bcc",
+            "colId": "4dcfbf8a-fa22-4cf9-87ca-9bef4b6d3581",
+            "containerId": "335324d0-8b49-40d8-b143-32d2cae37d9f",
+            "name": "Create order",
+            "url": "http://localhost:3000/order",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2025-04-29T11:45:10.670Z",
+            "modified": "2025-04-29T12:51:34.348Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"OrderName5\",\n  \"Address\":\"address2\",\n  \"order_no\":\"123\",\n  \"distance\":\"23\",\n  \"direction\":\"North\",\n  \"managedBy\":\"6810b9b9c76f9a1c55e3d3e7\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "2e853e37-0be8-4f36-91ad-339a82534a51",
+            "colId": "4dcfbf8a-fa22-4cf9-87ca-9bef4b6d3581",
+            "containerId": "335324d0-8b49-40d8-b143-32d2cae37d9f",
+            "name": "get orders",
+            "url": "http://localhost:3000/order",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2025-04-29T11:45:52.974Z",
+            "modified": "2025-04-29T11:45:59.281Z",
+            "headers": []
+        },
+        {
+            "_id": "67cc9e95-c8ee-4534-b5eb-a1c17fff227b",
+            "colId": "4dcfbf8a-fa22-4cf9-87ca-9bef4b6d3581",
+            "containerId": "335324d0-8b49-40d8-b143-32d2cae37d9f",
+            "name": "get order by Id",
+            "url": "http://localhost:3000/order/6810b9f5c76f9a1c55e3d3ed",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2025-04-29T11:46:07.116Z",
+            "modified": "2025-04-29T11:46:27.310Z",
+            "headers": []
+        },
+        {
+            "_id": "02258b32-257c-45e8-b43d-ed6b37db0517",
+            "colId": "4dcfbf8a-fa22-4cf9-87ca-9bef4b6d3581",
+            "containerId": "335324d0-8b49-40d8-b143-32d2cae37d9f",
+            "name": "update order",
+            "url": "http://localhost:3000/order/6810b9f5c76f9a1c55e3d3ed",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2025-04-29T11:46:35.238Z",
+            "modified": "2025-04-29T11:47:21.237Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\n    \"name\": \"OrderName\",\n    \"Address\": \"address2\",\n    \"distance\": \"23\",\n    \"direction\": \"East\"\n  }",
+                "form": []
+            }
+        },
+        {
+            "_id": "13c2badb-b4ae-4178-87ae-93a1b78e5174",
+            "colId": "4dcfbf8a-fa22-4cf9-87ca-9bef4b6d3581",
+            "containerId": "335324d0-8b49-40d8-b143-32d2cae37d9f",
+            "name": "delete order",
+            "url": "http://localhost:3000/order/6810b9f5c76f9a1c55e3d3ed",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2025-04-29T11:46:38.085Z",
+            "modified": "2025-04-29T11:47:58.072Z",
+            "headers": []
+        },
+        {
+            "_id": "89df016d-58d0-4f7d-a8af-6e96b867bca8",
+            "colId": "4dcfbf8a-fa22-4cf9-87ca-9bef4b6d3581",
+            "containerId": "cfa65e76-c85e-4458-b493-19f7f2075bdd",
+            "name": "get all sales person",
+            "url": "http://localhost:3000/sales-person",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2025-04-29T11:50:10.611Z",
+            "modified": "2025-04-29T11:50:20.008Z",
+            "headers": []
+        },
+        {
+            "_id": "b47f6106-1b0b-4c0f-9d6a-ec953335e310",
+            "colId": "4dcfbf8a-fa22-4cf9-87ca-9bef4b6d3581",
+            "containerId": "cfa65e76-c85e-4458-b493-19f7f2075bdd",
+            "name": "create sales person",
+            "url": "http://localhost:3000/sales-person",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2025-04-29T11:50:29.910Z",
+            "modified": "2025-04-29T12:54:10.905Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"salesPerson1\",\n  \"capacities\":12,\n  \"managedBy\":\"6810b9b9c76f9a1c55e3d3e7\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e6c01f81-0567-42dc-b204-a95d000b4e1a",
+            "colId": "4dcfbf8a-fa22-4cf9-87ca-9bef4b6d3581",
+            "containerId": "cfa65e76-c85e-4458-b493-19f7f2075bdd",
+            "name": "get sales person by Id",
+            "url": "http://localhost:3000/sales-person/6810bd63d76f1fc9f722dbf2",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2025-04-29T11:52:32.921Z",
+            "modified": "2025-04-29T11:52:44.878Z",
+            "headers": []
+        },
+        {
+            "_id": "98ddc8c5-d804-45b5-a78f-6a2bb9f74ac0",
+            "colId": "4dcfbf8a-fa22-4cf9-87ca-9bef4b6d3581",
+            "containerId": "cfa65e76-c85e-4458-b493-19f7f2075bdd",
+            "name": "Update SalesPerson",
+            "url": "http://localhost:3000/sales-person/6810bd63d76f1fc9f722dbf2",
+            "method": "PUT",
+            "sortNum": 150000,
+            "created": "2025-04-29T11:53:11.139Z",
+            "modified": "2025-04-29T11:53:53.907Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Rahul\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "2f605058-2373-4281-a083-d2de750c0bf4",
+            "colId": "4dcfbf8a-fa22-4cf9-87ca-9bef4b6d3581",
+            "containerId": "cfa65e76-c85e-4458-b493-19f7f2075bdd",
+            "name": "Delete Sales Person",
+            "url": "http://localhost:3000/sales-person/6810bd1f8272144f1c1402ca",
+            "method": "DELETE",
+            "sortNum": 160000,
+            "created": "2025-04-29T11:54:17.435Z",
+            "modified": "2025-04-29T11:54:45.285Z",
+            "headers": []
+        }
+    ],
+    "ref": "OIbyFsK7lIdUfaNWn2Ny0WrfpMqcXJe4iMYzw7nU0O3uGvzriY96f-KxIWhSXbzJJreHkb2iZK3SM-F-YpLQOA"
 }

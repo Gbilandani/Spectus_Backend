@@ -14,7 +14,7 @@ const orderSchema = new mongoose.Schema({
     required: true,
   },
   distance: {
-    type: String,
+    type: Number,
     required: true,
   },
   direction: {
